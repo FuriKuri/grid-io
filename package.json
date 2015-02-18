@@ -1,0 +1,19 @@
+{
+  "name": "grid-io",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FuriKuri/grid-io.git"
+  },
+  "author": "Theo Pack",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FuriKuri/grid-io/issues"
+  },
+  "homepage": "https://github.com/FuriKuri/grid-io"
+}
