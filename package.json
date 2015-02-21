@@ -4,7 +4,12 @@
   "description": "",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "jshint lib",
+    "checkStyle": "jscs lib",
+    "pretest": "npm run-script lint && npm run-script checkStyle",
+    "test": "istanbul cover ./node_modules/.bin/jasmine-node spec",
+    "posttest": "istanbul check-coverage",
+    "prepublish": "npm test && npm prune"
   },
   "repository": {
     "type": "git",
@@ -15,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/FuriKuri/grid-io/issues"
   },
-  "homepage": "https://github.com/FuriKuri/grid-io"
+  "homepage": "https://github.com/FuriKuri/grid-io",
+  "devDependencies": {
+    "istanbul": "^0.3.6",
+    "jasmine-node": "^1.14.5",
+    "jscs": "^1.11.3",
+    "jshint": "^2.6.0"
+  }
 }
