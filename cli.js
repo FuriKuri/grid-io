@@ -2,7 +2,7 @@
 
 var Master = require('./lib/master');
 
-var Node = require('./lib/client');
+var Client = require('./lib/client');
 
 new Master(1337).listen();
 
