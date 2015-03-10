@@ -6,7 +6,12 @@ var Client = require('./lib/client');
 
 new Master(1337).listen();
 
+function hello() {
+  return 'hello';
+}
+
 var client = new Client(1338);
+client.add(hello, 'hello');
 client.listen();
 client.connect('127.0.0.1', 1337);
 
